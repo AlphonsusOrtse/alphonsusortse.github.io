@@ -55,3 +55,19 @@ footer p { margin: auto; }
   #home { padding-top: 4rem; }
   section { padding: 3rem 0; }
 }
+
+/* Project cards: horizontal on wide screens, stacked on small screens */
+.project-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.project-grid article {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .project-grid { flex-direction: column; }
+}
