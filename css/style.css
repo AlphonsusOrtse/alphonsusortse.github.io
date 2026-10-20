@@ -72,3 +72,26 @@ footer p { margin: auto; }
 @media (max-width: 600px) {
   .project-grid { grid-template-columns: 1fr; }
 }
+
+/* Light theme overrides the shared color variables. */
+:root.light-theme {
+  color-scheme: light;
+  --background: #f7f9fd;
+  --surface: #ffffff;
+  --text: #142238;
+  --muted: #3d4c63;
+  --accent: #0759a7;
+  --border: #d9e2ee;
+}
+#theme-btn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+#theme-btn:hover, #theme-btn:focus-visible {
+  border-color: var(--accent);
+}
