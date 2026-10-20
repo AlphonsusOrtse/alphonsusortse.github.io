@@ -3,64 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Alphonsus Ortse, an aspiring software engineer focused on backend development and AI engineering.">
+  <meta name="description" content="Alphonsus Ortse's software engineering portfolio: Python, Go, Flask, backend projects and an AI engineering learning journey.">
+  <meta name="theme-color" content="#0b1220">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
-  <title>Alphonsus Ortse | Software Engineering Portfolio</title>
+  <title>Alphonsus Ortse | Software Engineer in Training</title>
 </head>
 <body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="#home">Alphonsus Ortse</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home">AO<span class="brand-dot">.</span> <span class="brand-name">Alphonsus Ortse</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
       <button type="button" id="theme-btn" aria-pressed="false">Light mode</button>
     </nav>
   </header>
 
-  <main>
-    <section id="home">
-      <h1>Hi, I'm Alphonsus Ortse.</h1>
-      <p>Aspiring Software Engineer | Backend Development | AI Engineering</p>
-      <p>I build practical applications and learn how software systems work under the hood.</p>
-      <a href="#projects">Explore my projects</a>
+  <main id="main" class="container">
+    <section id="home" class="hero">
+      <p class="eyebrow">SOFTWARE ENGINEERING · BACKEND DEVELOPMENT</p>
+      <h1>Building practical software, <span class="accent">one problem at a time.</span></h1>
+      <p class="hero-lead">Hi, I'm Alphonsus Ortse. I'm developing my skills in Python, Go, backend systems, and AI-native engineering through hands-on projects.</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="https://github.com/AlphonsusOrtse" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hero-note">Curious about how systems work under the hood.</p>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm developing my software engineering skills through hands-on projects with Python, Go, Flask, and databases. My long-term focus is AI-native software engineering and system design.</p>
+    <section id="about" class="section">
+      <p class="eyebrow">01 / ABOUT</p>
+      <h2>Engineering through practice.</h2>
+      <p>I come from a microbiology background and am transitioning into software engineering. I enjoy breaking down problems, understanding the reasoning behind code, and turning ideas into working applications.</p>
+      <p>My current focus is building a strong foundation in backend development, databases, software architecture, and AI-native engineering.</p>
     </section>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-      <article>
-        <h3>Campus Access Management System</h3>
-        <p>A Python CLI project for access-card requests and status workflows.</p>
-        <a href="https://github.com/AlphonsusOrtse/campus-access">View project</a>
-      </article>
-      <article>
-        <h3>Campus Resource Management — Web</h3>
-        <p>A Flask web project exploring templates, routing, and database integration.</p>
-        <a href="https://github.com/AlphonsusOrtse/campus_resource_system_web_version">View project</a>
-      </article>
-      <article>
-        <h3>Student Task Manager</h3>
-        <p>A Python command-line task manager using JSON persistence.</p>
-        <a href="https://github.com/AlphonsusOrtse/student-task-manager">View project</a>
-      </article>
+    <section id="skills" class="section">
+      <p class="eyebrow">02 / TOOLKIT</p>
+      <h2>Technologies I'm working with</h2>
+      <p>Tools and concepts I've used in coursework and hands-on projects, with plenty more to learn.</p>
+      <div class="skills-grid">
+        <div class="skill-group"><h3>Languages</h3><div class="tags"><span>Python</span><span>Go</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></div>
+        <div class="skill-group"><h3>Backend & data</h3><div class="tags"><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>JSON</span></div></div>
+        <div class="skill-group"><h3>Workflow & concepts</h3><div class="tags"><span>Git</span><span>GitHub</span><span>CLI applications</span><span>Validation</span><span>Persistence</span></div></div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Let's Connect</h2>
-      <p><a href="https://github.com/AlphonsusOrtse">GitHub</a> · <a href="https://www.linkedin.com/in/alphonsusortse/">LinkedIn</a></p>
+    <section id="projects" class="section">
+      <p class="eyebrow">03 / SELECTED WORK</p>
+      <h2>Featured projects</h2>
+      <p>Projects where I've practiced designing program behavior, handling data, and building reliable workflows.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top"><span class="project-type">PYTHON · CLI</span><span aria-hidden="true">↗</span></div>
+          <h3>Campus Access Management</h3>
+          <p>Access-card request workflow with input validation, controlled status transitions, and JSON persistence. Built collaboratively using Git branches and code reviews.</p>
+          <a class="project-link" href="https://github.com/AlphonsusOrtse/campus-access" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-type">PYTHON · FLASK</span><span aria-hidden="true">↗</span></div>
+          <h3>Campus Resource Management</h3>
+          <p>A developing web application exploring Flask routing, Jinja templates, and SQLAlchemy database integration for campus resources.</p>
+          <a class="project-link" href="https://github.com/AlphonsusOrtse/campus_resource_system_web_version" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-type">PYTHON · CLI</span><span aria-hidden="true">↗</span></div>
+          <h3>Student Task Manager</h3>
+          <p>A command-line application for managing student tasks, with user-input validation and JSON-based storage across program runs.</p>
+          <a class="project-link" href="https://github.com/AlphonsusOrtse/student-task-manager" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <p class="eyebrow">04 / CURRENT FOCUS</p>
+      <h2>Learning by building.</h2>
+      <p>I'm working toward becoming an AI-native software engineer. Right now, that means strengthening programming fundamentals, understanding backend architecture, and shipping small but complete projects.</p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">05 / CONNECT</p>
+      <h2>Let's connect.</h2>
+      <p>Interested in my work or learning journey? You can find me on GitHub and LinkedIn.</p>
+      <div class="actions">
+        <a class="button primary" href="https://www.linkedin.com/in/alphonsusortse/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="https://github.com/AlphonsusOrtse" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>© 2026 Alphonsus Ortse</p>
-  </footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Alphonsus Ortse</span><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
